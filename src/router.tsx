@@ -4,6 +4,7 @@ import App from './App'
 import Home from './pages/Home'
 
 const PlanetLab = lazy(() => import('./pages/PlanetLab'))
+const BlackHoleLab = lazy(() => import('./pages/BlackHoleLab'))
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,14 @@ export const router = createBrowserRouter([
         element: (
           <Suspense fallback={<div className="loading">…</div>}>
             <PlanetLab />
+          </Suspense>
+        ),
+      },
+      {
+        path: '/black-hole-lab',
+        element: (
+          <Suspense fallback={<div className="loading">…</div>}>
+            <BlackHoleLab />
           </Suspense>
         ),
       },

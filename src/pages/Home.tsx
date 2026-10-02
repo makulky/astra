@@ -18,7 +18,13 @@ export default function Home() {
           <p>{t('home.cards.planetLab.desc')}</p>
           <span className="cta">{t('home.cards.planetLab.cta')} →</span>
         </Link>
-        {(['stars', 'orbits'] as const).map((k) => (
+        <Link to="/black-hole-lab" className="card card-main card-bh">
+          <div className="card-orb card-orb-bh" aria-hidden />
+          <h2>{t('home.cards.blackHole.title')}</h2>
+          <p>{t('home.cards.blackHole.desc')}</p>
+          <span className="cta">{t('home.cards.blackHole.cta')} →</span>
+        </Link>
+        {(['orbits'] as const).map((k) => (
           <div key={k} className="card card-soon" aria-disabled>
             <span className="badge">{t('home.cards.soon')}</span>
             <h2>{t(`home.cards.${k}.title`)}</h2>

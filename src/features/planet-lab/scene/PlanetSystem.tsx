@@ -4,7 +4,7 @@ import * as THREE from 'three'
 import { usePlanetLab } from '../store'
 import { createCloudMaterial, createGlowMaterial } from '../shaders/atmosphere'
 import { createPlanetMaterial } from '../shaders/planet'
-import { useSmoothed } from './useSmoothed'
+import { useSmoothed } from '../../../lib/useSmoothed'
 import { LIGHT_DIR, visualTargets, type VisualState } from './visuals'
 
 const ORBIT_INCLINATION = THREE.MathUtils.degToRad(5)

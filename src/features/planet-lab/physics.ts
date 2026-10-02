@@ -1,3 +1,7 @@
+import { clamp, smoothstep } from '../../lib/math'
+
+export { clamp, smoothstep }
+
 // Simplified astrophysics used by the planet lab. All units relative to Earth / Sun
 // unless stated otherwise. Formulas are deliberately approximate but physically motivated.
 
@@ -61,11 +65,6 @@ const EARTH_DENSITY = 5.51
 const MOON_EARTH_MASS = 0.0123
 const MOON_RADIUS_EARTH = 0.2727
 
-export const clamp = (x: number, a = 0, b = 1) => Math.min(b, Math.max(a, x))
-export const smoothstep = (e0: number, e1: number, x: number) => {
-  const t = clamp((x - e0) / (e1 - e0))
-  return t * t * (3 - 2 * t)
-}
 
 export function moonRadiusInEarthRadii(moonRadius: number) {
   return moonRadius * MOON_RADIUS_EARTH

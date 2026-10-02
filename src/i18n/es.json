@@ -1,14 +1,33 @@
 {
-  "nav": { "home": "Inicio", "planetLab": "Laboratorio planetario" },
+  "nav": {
+    "home": "Inicio",
+    "planetLab": "Laboratorio planetario",
+    "blackHoleLab": "Agujeros negros"
+  },
   "home": {
     "kicker": "Astrofísica interactiva",
     "title": "Explora el universo construyéndolo",
     "subtitle": "Herramientas visuales para entender cómo funcionan planetas, estrellas y galaxias.",
     "cards": {
-      "planetLab": { "title": "Laboratorio planetario", "desc": "Diseña un planeta y su luna en 3D, ajusta su física y descubre si podría albergar vida.", "cta": "Abrir laboratorio" },
+      "planetLab": {
+        "title": "Laboratorio planetario",
+        "desc": "Diseña un planeta y su luna en 3D, ajusta su física y descubre si podría albergar vida.",
+        "cta": "Abrir laboratorio"
+      },
       "soon": "Próximamente",
-      "stars": { "title": "Ciclo de vida estelar", "desc": "De nebulosa a enana blanca, estrella de neutrones o agujero negro." },
-      "orbits": { "title": "Mecánica orbital", "desc": "Leyes de Kepler, transferencias de Hohmann y puntos de Lagrange." }
+      "stars": {
+        "title": "Ciclo de vida estelar",
+        "desc": "De nebulosa a enana blanca, estrella de neutrones o agujero negro."
+      },
+      "orbits": {
+        "title": "Mecánica orbital",
+        "desc": "Leyes de Kepler, transferencias de Hohmann y puntos de Lagrange."
+      },
+      "blackHole": {
+        "title": "Laboratorio de agujeros negros",
+        "desc": "Fórmalo a partir de una estrella, aliméntalo, fusiona dos y mira cómo curvan la luz.",
+        "cta": "Abrir laboratorio"
+      }
     }
   },
   "lab": {
@@ -17,7 +36,13 @@
     "reset": "Restablecer",
     "openPanel": "Parámetros",
     "closePanel": "Cerrar",
-    "sections": { "star": "Estrella", "planet": "Planeta", "surface": "Atmósfera y superficie", "moon": "Satélite", "data": "Datos calculados" },
+    "sections": {
+      "star": "Estrella",
+      "planet": "Planeta",
+      "surface": "Atmósfera y superficie",
+      "moon": "Satélite",
+      "data": "Datos calculados"
+    },
     "params": {
       "mass": "Masa",
       "radius": "Radio",
@@ -69,18 +94,51 @@
       "details": "Ver factores",
       "hide": "Ocultar factores",
       "disclaimer": "Modelo educativo simplificado, no una predicción científica.",
-      "levels": { "none": "Hostil", "low": "Improbable", "mid": "Posible", "high": "Prometedor", "veryHigh": "Muy habitable" }
+      "levels": {
+        "none": "Hostil",
+        "low": "Improbable",
+        "mid": "Posible",
+        "high": "Prometedor",
+        "veryHigh": "Muy habitable"
+      }
     },
     "factors": {
-      "temperature": { "name": "Temperatura", "info": "La química de la vida funciona mejor entre ~0 °C y ~50 °C." },
-      "water": { "name": "Agua líquida", "info": "Necesita agua y que la temperatura y presión permitan que sea líquida." },
-      "atmosphere": { "name": "Atmósfera", "info": "Presión adecuada y gravedad suficiente para no perder el gas al espacio." },
-      "size": { "name": "Tamaño", "info": "Planetas muy pequeños pierden su atmósfera; los muy grandes suelen ser gaseosos." },
-      "habitableZone": { "name": "Zona habitable", "info": "Región alrededor de la estrella donde puede existir agua líquida." },
-      "magnetic": { "name": "Magnetosfera", "info": "Protege de la radiación y del viento estelar. Requiere núcleo de hierro y rotación." },
-      "rotation": { "name": "Rotación", "info": "Días muy largos o acoplamiento de marea producen contrastes térmicos extremos." },
-      "stability": { "name": "Estabilidad del eje", "info": "Una luna masiva estabiliza la inclinación y con ella el clima." },
-      "star": { "name": "Tipo de estrella", "info": "Las enanas rojas emiten fulguraciones; las estrellas F viven poco." }
+      "temperature": {
+        "name": "Temperatura",
+        "info": "La química de la vida funciona mejor entre ~0 °C y ~50 °C."
+      },
+      "water": {
+        "name": "Agua líquida",
+        "info": "Necesita agua y que la temperatura y presión permitan que sea líquida."
+      },
+      "atmosphere": {
+        "name": "Atmósfera",
+        "info": "Presión adecuada y gravedad suficiente para no perder el gas al espacio."
+      },
+      "size": {
+        "name": "Tamaño",
+        "info": "Planetas muy pequeños pierden su atmósfera; los muy grandes suelen ser gaseosos."
+      },
+      "habitableZone": {
+        "name": "Zona habitable",
+        "info": "Región alrededor de la estrella donde puede existir agua líquida."
+      },
+      "magnetic": {
+        "name": "Magnetosfera",
+        "info": "Protege de la radiación y del viento estelar. Requiere núcleo de hierro y rotación."
+      },
+      "rotation": {
+        "name": "Rotación",
+        "info": "Días muy largos o acoplamiento de marea producen contrastes térmicos extremos."
+      },
+      "stability": {
+        "name": "Estabilidad del eje",
+        "info": "Una luna masiva estabiliza la inclinación y con ella el clima."
+      },
+      "star": {
+        "name": "Tipo de estrella",
+        "info": "Las enanas rojas emiten fulguraciones; las estrellas F viven poco."
+      }
     },
     "presetNames": {
       "earth": "Tierra",
@@ -91,7 +149,210 @@
       "ice": "Mundo helado",
       "redDwarf": "Enana roja"
     },
-    "units": { "au": "UA" },
+    "units": {
+      "au": "UA"
+    },
     "controls": "Arrastra para girar · rueda para acercar"
+  },
+  "bh": {
+    "modes": {
+      "form": "Formar",
+      "lab": "Laboratorio",
+      "feed": "Alimentar",
+      "merge": "Fusionar"
+    },
+    "modeHints": {
+      "form": "Crea un agujero negro a partir de una estrella masiva.",
+      "lab": "Ajusta sus parámetros y observa cómo cambia.",
+      "feed": "Arrastra sobre el disco para lanzarle materia.",
+      "merge": "Haz que dos agujeros negros se fusionen."
+    },
+    "quality": "Calidad",
+    "qualities": {
+      "low": "Baja",
+      "medium": "Media",
+      "high": "Alta"
+    },
+    "presets": "Agujeros negros reales",
+    "presetNames": {
+      "cygnusX1": "Cygnus X-1",
+      "sgrA": "Sagitario A*",
+      "m87": "M87*",
+      "gw150914": "GW150914",
+      "ton618": "TON 618"
+    },
+    "sections": {
+      "hole": "Agujero negro",
+      "disk": "Disco de acreción",
+      "data": "Datos calculados",
+      "visitor": "Si viajaras hasta allí"
+    },
+    "params": {
+      "mass": "Masa",
+      "spin": "Espín (a*)",
+      "accretion": "Tasa de acreción",
+      "diskOuter": "Radio exterior del disco",
+      "jets": "Chorros relativistas"
+    },
+    "hints": {
+      "spin": "Rapidez de giro. Negativo: el disco gira en sentido contrario al agujero.",
+      "accretion": "Fracción del límite de Eddington (máximo estable de brillo).",
+      "diskOuter": "En radios gravitacionales, r_g = GM/c².",
+      "jets": "Aparecen con espín alto y acreción moderada."
+    },
+    "data": {
+      "rs": "Radio de Schwarzschild",
+      "horizon": "Horizonte de sucesos",
+      "isco": "Órbita estable más interna",
+      "shadow": "Diámetro de la sombra",
+      "efficiency": "Eficiencia radiativa",
+      "luminosity": "Luminosidad",
+      "accretionRate": "Materia tragada",
+      "diskTemp": "Temp. máx. del disco",
+      "hawking": "Temperatura de Hawking",
+      "evaporation": "Evaporación por Hawking",
+      "density": "Densidad media",
+      "perYear": "M☉/año",
+      "years": "años",
+      "suns": "L☉"
+    },
+    "visitor": {
+      "tides": "Estiramiento en el horizonte (persona de 2 m)",
+      "tideLevels": {
+        "none": "Lo cruzarías sin notar nada",
+        "uncomfortable": "Estiramiento muy incómodo",
+        "deadly": "Espaguetización"
+      },
+      "time": "Dilatación temporal en la órbita más interna",
+      "timeText": "1 hora allí = {{value}} aquí",
+      "star": "Una estrella como el Sol…",
+      "starTorn": "sería destrozada a {{distance}} del centro",
+      "starWhole": "sería tragada entera, sin llegar a romperse"
+    },
+    "units": {
+      "hours": "horas",
+      "km": "km",
+      "au": "UA"
+    },
+    "form": {
+      "star": "Estrella progenitora",
+      "mass": "Masa inicial",
+      "metallicity": "Metalicidad",
+      "rotation": "Rotación",
+      "metallicityHint": "Elementos pesados (Sol ≈ 0,014). Más metales → vientos más fuertes y más masa perdida.",
+      "rotationHint": "Fracción de la velocidad de ruptura. Se transmite al espín del agujero negro.",
+      "locked": "Para cambiar la estrella, empieza de nuevo.",
+      "prediction": "Destino previsto",
+      "stages": {
+        "0": "Secuencia principal",
+        "1": "Supergigante",
+        "2": "Colapso del núcleo",
+        "3": "Muerte",
+        "4": "Remanente"
+      },
+      "stageText": {
+        "0": "Fusiona hidrógeno en su núcleo durante unos {{time}}.",
+        "1": "Agotado el hidrógeno, se hincha hasta ~{{radius}} radios solares y pierde masa por vientos.",
+        "2": "El núcleo de hierro no puede producir más energía y colapsa en menos de un segundo.",
+        "3": "{{death}}.",
+        "4": "{{remnant}} de {{mass}} M☉.",
+        "2wd": "El núcleo se contrae y la estrella expulsa sus capas exteriores."
+      },
+      "buttons": {
+        "evolve": "Evolucionar",
+        "collapse": "Colapsar núcleo",
+        "next": "Continuar",
+        "reset": "Empezar de nuevo",
+        "toLab": "Llevar al laboratorio"
+      },
+      "deaths": {
+        "planetaryNebula": "Expulsa sus capas en una nebulosa planetaria",
+        "supernova": "Explota como supernova",
+        "fallbackSupernova": "Supernova débil: parte del material vuelve a caer",
+        "directCollapse": "Supernova fallida: la estrella entera colapsa",
+        "pulsationalPairInstability": "Pulsos de inestabilidad de pares expulsan masa antes del colapso",
+        "pairInstability": "Supernova de inestabilidad de pares: la estrella se desintegra"
+      },
+      "remnants": {
+        "whiteDwarf": "Enana blanca",
+        "neutronStar": "Estrella de neutrones",
+        "blackHole": "Agujero negro",
+        "none": "No queda nada"
+      },
+      "remnantText": {
+        "whiteDwarf": "No tenía masa suficiente: queda una enana blanca del tamaño de la Tierra.",
+        "neutronStar": "El núcleo se quedó en una estrella de neutrones (un púlsar). Prueba con más masa.",
+        "blackHole": "¡Has creado un agujero negro!",
+        "none": "La explosión fue tan violenta que no dejó remanente. Prueba otra masa o más metalicidad."
+      },
+      "facts": {
+        "finalMass": "Masa al morir",
+        "heliumCore": "Núcleo de helio",
+        "windLoss": "Perdida por vientos",
+        "lifetime": "Vida",
+        "remnantMass": "Remanente",
+        "spin": "Espín"
+      }
+    },
+    "feed": {
+      "tools": {
+        "gas": "Nube de gas",
+        "star": "Estrella",
+        "planet": "Planeta"
+      },
+      "instructions": "Elige un objeto y arrastra sobre el plano del disco: donde empiezas es la posición y la dirección del arrastre su velocidad.",
+      "exaggerate": "Crecimiento exagerado",
+      "exaggerateHint": "En la realidad una estrella apenas cambia la masa de un agujero grande. Así el crecimiento se nota.",
+      "log": "Registro",
+      "clear": "Limpiar",
+      "empty": "Todavía no ha caído nada.",
+      "events": {
+        "disrupted": {
+          "star": "Estrella destrozada por las fuerzas de marea",
+          "planet": "Planeta destrozado por las fuerzas de marea"
+        },
+        "swallowedWhole": {
+          "star": "Estrella tragada entera",
+          "planet": "Planeta tragado entero"
+        },
+        "plunged": {
+          "star": "Una estrella cruzó el horizonte",
+          "planet": "Un planeta cruzó el horizonte"
+        },
+        "gasAccreted": {
+          "gas": "La nube de gas alimenta el disco"
+        }
+      },
+      "tidalNote": "Radio de marea para una estrella: {{distance}}"
+    },
+    "merge": {
+      "m1": "Masa 1",
+      "m2": "Masa 2",
+      "separation": "Separación inicial",
+      "start": "Iniciar espiral",
+      "restart": "Repetir",
+      "listen": "Escuchar la onda",
+      "toLab": "Llevar remanente al laboratorio",
+      "phases": {
+        "idle": "Preparado",
+        "inspiral": "Espiral",
+        "ringdown": "Ringdown",
+        "done": "Fusionados"
+      },
+      "wave": "Onda gravitacional h(t)",
+      "result": {
+        "finalMass": "Masa final",
+        "finalSpin": "Espín final",
+        "radiated": "Radiado en ondas",
+        "peakFreq": "Frecuencia al fusionarse",
+        "ringFreq": "Frecuencia de ringdown",
+        "chirpMass": "Masa de chirp",
+        "timeToMerge": "Tiempo real de la espiral"
+      },
+      "radiatedText": "{{mass}} M☉ convertidas en energía ({{energy}} J)",
+      "audioNote": "Se oye la frecuencia real de la onda (limitada a 30–1500 Hz)."
+    },
+    "controls": "Arrastra para girar · rueda para acercar",
+    "disclaimer": "Render y física simplificados con fines educativos."
   }
 }

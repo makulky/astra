@@ -1,14 +1,33 @@
 {
-  "nav": { "home": "Home", "planetLab": "Planet lab" },
+  "nav": {
+    "home": "Home",
+    "planetLab": "Planet lab",
+    "blackHoleLab": "Black holes"
+  },
   "home": {
     "kicker": "Interactive astrophysics",
     "title": "Explore the universe by building it",
     "subtitle": "Visual tools to understand how planets, stars and galaxies work.",
     "cards": {
-      "planetLab": { "title": "Planet lab", "desc": "Design a planet and its moon in 3D, tune its physics and find out whether it could host life.", "cta": "Open lab" },
+      "planetLab": {
+        "title": "Planet lab",
+        "desc": "Design a planet and its moon in 3D, tune its physics and find out whether it could host life.",
+        "cta": "Open lab"
+      },
       "soon": "Coming soon",
-      "stars": { "title": "Stellar life cycle", "desc": "From nebula to white dwarf, neutron star or black hole." },
-      "orbits": { "title": "Orbital mechanics", "desc": "Kepler's laws, Hohmann transfers and Lagrange points." }
+      "stars": {
+        "title": "Stellar life cycle",
+        "desc": "From nebula to white dwarf, neutron star or black hole."
+      },
+      "orbits": {
+        "title": "Orbital mechanics",
+        "desc": "Kepler's laws, Hohmann transfers and Lagrange points."
+      },
+      "blackHole": {
+        "title": "Black hole lab",
+        "desc": "Form one from a star, feed it, merge two and watch them bend light.",
+        "cta": "Open lab"
+      }
     }
   },
   "lab": {
@@ -17,7 +36,13 @@
     "reset": "Reset",
     "openPanel": "Parameters",
     "closePanel": "Close",
-    "sections": { "star": "Star", "planet": "Planet", "surface": "Atmosphere & surface", "moon": "Moon", "data": "Computed data" },
+    "sections": {
+      "star": "Star",
+      "planet": "Planet",
+      "surface": "Atmosphere & surface",
+      "moon": "Moon",
+      "data": "Computed data"
+    },
     "params": {
       "mass": "Mass",
       "radius": "Radius",
@@ -69,18 +94,51 @@
       "details": "Show factors",
       "hide": "Hide factors",
       "disclaimer": "Simplified educational model, not a scientific prediction.",
-      "levels": { "none": "Hostile", "low": "Unlikely", "mid": "Possible", "high": "Promising", "veryHigh": "Highly habitable" }
+      "levels": {
+        "none": "Hostile",
+        "low": "Unlikely",
+        "mid": "Possible",
+        "high": "Promising",
+        "veryHigh": "Highly habitable"
+      }
     },
     "factors": {
-      "temperature": { "name": "Temperature", "info": "Life's chemistry works best between ~0 °C and ~50 °C." },
-      "water": { "name": "Liquid water", "info": "Needs water, plus temperature and pressure that keep it liquid." },
-      "atmosphere": { "name": "Atmosphere", "info": "Suitable pressure and enough gravity to keep the gas from escaping." },
-      "size": { "name": "Size", "info": "Very small planets lose their air; very large ones tend to be gaseous." },
-      "habitableZone": { "name": "Habitable zone", "info": "Region around the star where liquid water can exist." },
-      "magnetic": { "name": "Magnetosphere", "info": "Shields from radiation and stellar wind. Needs an iron core and rotation." },
-      "rotation": { "name": "Rotation", "info": "Very long days or tidal locking cause extreme temperature contrasts." },
-      "stability": { "name": "Axis stability", "info": "A massive moon stabilises the tilt, and with it the climate." },
-      "star": { "name": "Star type", "info": "Red dwarfs flare violently; F stars are short-lived." }
+      "temperature": {
+        "name": "Temperature",
+        "info": "Life's chemistry works best between ~0 °C and ~50 °C."
+      },
+      "water": {
+        "name": "Liquid water",
+        "info": "Needs water, plus temperature and pressure that keep it liquid."
+      },
+      "atmosphere": {
+        "name": "Atmosphere",
+        "info": "Suitable pressure and enough gravity to keep the gas from escaping."
+      },
+      "size": {
+        "name": "Size",
+        "info": "Very small planets lose their air; very large ones tend to be gaseous."
+      },
+      "habitableZone": {
+        "name": "Habitable zone",
+        "info": "Region around the star where liquid water can exist."
+      },
+      "magnetic": {
+        "name": "Magnetosphere",
+        "info": "Shields from radiation and stellar wind. Needs an iron core and rotation."
+      },
+      "rotation": {
+        "name": "Rotation",
+        "info": "Very long days or tidal locking cause extreme temperature contrasts."
+      },
+      "stability": {
+        "name": "Axis stability",
+        "info": "A massive moon stabilises the tilt, and with it the climate."
+      },
+      "star": {
+        "name": "Star type",
+        "info": "Red dwarfs flare violently; F stars are short-lived."
+      }
     },
     "presetNames": {
       "earth": "Earth",
@@ -91,7 +149,210 @@
       "ice": "Ice world",
       "redDwarf": "Red dwarf"
     },
-    "units": { "au": "AU" },
+    "units": {
+      "au": "AU"
+    },
     "controls": "Drag to rotate · scroll to zoom"
+  },
+  "bh": {
+    "modes": {
+      "form": "Form",
+      "lab": "Lab",
+      "feed": "Feed",
+      "merge": "Merge"
+    },
+    "modeHints": {
+      "form": "Create a black hole from a massive star.",
+      "lab": "Tune its parameters and watch it change.",
+      "feed": "Drag across the disk to throw matter at it.",
+      "merge": "Make two black holes merge."
+    },
+    "quality": "Quality",
+    "qualities": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "presets": "Real black holes",
+    "presetNames": {
+      "cygnusX1": "Cygnus X-1",
+      "sgrA": "Sagittarius A*",
+      "m87": "M87*",
+      "gw150914": "GW150914",
+      "ton618": "TON 618"
+    },
+    "sections": {
+      "hole": "Black hole",
+      "disk": "Accretion disk",
+      "data": "Computed data",
+      "visitor": "If you travelled there"
+    },
+    "params": {
+      "mass": "Mass",
+      "spin": "Spin (a*)",
+      "accretion": "Accretion rate",
+      "diskOuter": "Disk outer radius",
+      "jets": "Relativistic jets"
+    },
+    "hints": {
+      "spin": "How fast it rotates. Negative: the disk orbits against the hole's spin.",
+      "accretion": "Fraction of the Eddington limit (maximum stable brightness).",
+      "diskOuter": "In gravitational radii, r_g = GM/c².",
+      "jets": "Appear with high spin and moderate accretion."
+    },
+    "data": {
+      "rs": "Schwarzschild radius",
+      "horizon": "Event horizon",
+      "isco": "Innermost stable orbit",
+      "shadow": "Shadow diameter",
+      "efficiency": "Radiative efficiency",
+      "luminosity": "Luminosity",
+      "accretionRate": "Matter swallowed",
+      "diskTemp": "Peak disk temp.",
+      "hawking": "Hawking temperature",
+      "evaporation": "Hawking evaporation",
+      "density": "Mean density",
+      "perYear": "M☉/yr",
+      "years": "years",
+      "suns": "L☉"
+    },
+    "visitor": {
+      "tides": "Stretching at the horizon (2 m person)",
+      "tideLevels": {
+        "none": "You'd cross it without noticing",
+        "uncomfortable": "Very uncomfortable stretching",
+        "deadly": "Spaghettification"
+      },
+      "time": "Time dilation at the innermost orbit",
+      "timeText": "1 hour there = {{value}} here",
+      "star": "A Sun-like star…",
+      "starTorn": "would be torn apart {{distance}} from the centre",
+      "starWhole": "would be swallowed whole, without breaking up"
+    },
+    "units": {
+      "hours": "hours",
+      "km": "km",
+      "au": "AU"
+    },
+    "form": {
+      "star": "Progenitor star",
+      "mass": "Initial mass",
+      "metallicity": "Metallicity",
+      "rotation": "Rotation",
+      "metallicityHint": "Heavy elements (Sun ≈ 0.014). More metals → stronger winds and more mass lost.",
+      "rotationHint": "Fraction of break-up speed. Carried over into the black hole's spin.",
+      "locked": "To change the star, start over.",
+      "prediction": "Predicted fate",
+      "stages": {
+        "0": "Main sequence",
+        "1": "Supergiant",
+        "2": "Core collapse",
+        "3": "Death",
+        "4": "Remnant"
+      },
+      "stageText": {
+        "0": "Fuses hydrogen in its core for about {{time}}.",
+        "1": "With hydrogen exhausted it swells to ~{{radius}} solar radii and loses mass through winds.",
+        "2": "The iron core can no longer release energy and collapses in under a second.",
+        "3": "{{death}}.",
+        "4": "{{remnant}} of {{mass}} M☉.",
+        "2wd": "The core contracts and the star puffs off its outer layers."
+      },
+      "buttons": {
+        "evolve": "Evolve",
+        "collapse": "Collapse core",
+        "next": "Continue",
+        "reset": "Start over",
+        "toLab": "Take it to the lab"
+      },
+      "deaths": {
+        "planetaryNebula": "It sheds its layers as a planetary nebula",
+        "supernova": "It explodes as a supernova",
+        "fallbackSupernova": "Weak supernova: part of the material falls back",
+        "directCollapse": "Failed supernova: the whole star collapses",
+        "pulsationalPairInstability": "Pair-instability pulses shed mass before the collapse",
+        "pairInstability": "Pair-instability supernova: the star is blown apart"
+      },
+      "remnants": {
+        "whiteDwarf": "White dwarf",
+        "neutronStar": "Neutron star",
+        "blackHole": "Black hole",
+        "none": "Nothing left"
+      },
+      "remnantText": {
+        "whiteDwarf": "Not massive enough: an Earth-sized white dwarf remains.",
+        "neutronStar": "The core ended up as a neutron star (a pulsar). Try a heavier star.",
+        "blackHole": "You've created a black hole!",
+        "none": "The explosion was so violent it left no remnant. Try another mass or higher metallicity."
+      },
+      "facts": {
+        "finalMass": "Mass at death",
+        "heliumCore": "Helium core",
+        "windLoss": "Lost to winds",
+        "lifetime": "Lifetime",
+        "remnantMass": "Remnant",
+        "spin": "Spin"
+      }
+    },
+    "feed": {
+      "tools": {
+        "gas": "Gas cloud",
+        "star": "Star",
+        "planet": "Planet"
+      },
+      "instructions": "Pick an object and drag across the disk plane: where you start is its position and the drag direction its velocity.",
+      "exaggerate": "Exaggerated growth",
+      "exaggerateHint": "In reality one star barely changes a big hole's mass. This makes the growth visible.",
+      "log": "Log",
+      "clear": "Clear",
+      "empty": "Nothing has fallen in yet.",
+      "events": {
+        "disrupted": {
+          "star": "Star torn apart by tidal forces",
+          "planet": "Planet torn apart by tidal forces"
+        },
+        "swallowedWhole": {
+          "star": "Star swallowed whole",
+          "planet": "Planet swallowed whole"
+        },
+        "plunged": {
+          "star": "A star crossed the horizon",
+          "planet": "A planet crossed the horizon"
+        },
+        "gasAccreted": {
+          "gas": "The gas cloud is feeding the disk"
+        }
+      },
+      "tidalNote": "Tidal radius for a star: {{distance}}"
+    },
+    "merge": {
+      "m1": "Mass 1",
+      "m2": "Mass 2",
+      "separation": "Initial separation",
+      "start": "Start inspiral",
+      "restart": "Replay",
+      "listen": "Listen to the wave",
+      "toLab": "Take remnant to the lab",
+      "phases": {
+        "idle": "Ready",
+        "inspiral": "Inspiral",
+        "ringdown": "Ringdown",
+        "done": "Merged"
+      },
+      "wave": "Gravitational wave h(t)",
+      "result": {
+        "finalMass": "Final mass",
+        "finalSpin": "Final spin",
+        "radiated": "Radiated as waves",
+        "peakFreq": "Frequency at merger",
+        "ringFreq": "Ringdown frequency",
+        "chirpMass": "Chirp mass",
+        "timeToMerge": "Real inspiral time"
+      },
+      "radiatedText": "{{mass}} M☉ turned into energy ({{energy}} J)",
+      "audioNote": "You hear the wave's real frequency (limited to 30–1500 Hz)."
+    },
+    "controls": "Drag to rotate · scroll to zoom",
+    "disclaimer": "Simplified rendering and physics for educational purposes."
   }
 }

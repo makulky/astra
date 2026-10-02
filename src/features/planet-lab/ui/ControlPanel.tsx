@@ -3,7 +3,7 @@ import { STARS, type PlanetParams, type StarType } from '../physics'
 import { usePlanetLab } from '../store'
 import { DerivedData } from './DerivedData'
 import { Presets } from './Presets'
-import { Slider, Toggle } from './Slider'
+import { Slider, Toggle } from '../../../components/ui/Slider'
 
 const fmt = (digits: number) => (v: number) => v.toLocaleString(undefined, { maximumFractionDigits: digits, minimumFractionDigits: digits })
 const pct = (v: number) => `${Math.round(v * 100)}`

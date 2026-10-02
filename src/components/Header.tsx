@@ -24,6 +24,7 @@ export function Header() {
           {t('nav.home')}
         </NavLink>
         <NavLink to="/planet-lab">{t('nav.planetLab')}</NavLink>
+        <NavLink to="/black-hole-lab">{t('nav.blackHoleLab')}</NavLink>
       </nav>
       <LanguageSwitcher />
     </header>
