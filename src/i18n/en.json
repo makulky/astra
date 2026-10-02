@@ -1,0 +1,97 @@
+{
+  "nav": { "home": "Home", "planetLab": "Planet lab" },
+  "home": {
+    "kicker": "Interactive astrophysics",
+    "title": "Explore the universe by building it",
+    "subtitle": "Visual tools to understand how planets, stars and galaxies work.",
+    "cards": {
+      "planetLab": { "title": "Planet lab", "desc": "Design a planet and its moon in 3D, tune its physics and find out whether it could host life.", "cta": "Open lab" },
+      "soon": "Coming soon",
+      "stars": { "title": "Stellar life cycle", "desc": "From nebula to white dwarf, neutron star or black hole." },
+      "orbits": { "title": "Orbital mechanics", "desc": "Kepler's laws, Hohmann transfers and Lagrange points." }
+    }
+  },
+  "lab": {
+    "presets": "Presets",
+    "random": "Random",
+    "reset": "Reset",
+    "openPanel": "Parameters",
+    "closePanel": "Close",
+    "sections": { "star": "Star", "planet": "Planet", "surface": "Atmosphere & surface", "moon": "Moon", "data": "Computed data" },
+    "params": {
+      "mass": "Mass",
+      "radius": "Radius",
+      "distance": "Distance to star",
+      "rotationHours": "Rotation period",
+      "tidallyLocked": "Tidally locked",
+      "tilt": "Axial tilt",
+      "pressure": "Surface pressure",
+      "water": "Surface water",
+      "albedo": "Albedo",
+      "greenhouse": "Greenhouse effect",
+      "hasMoon": "Has a moon",
+      "moonMass": "Moon mass",
+      "moonRadius": "Moon radius",
+      "moonDistance": "Orbital distance"
+    },
+    "hints": {
+      "tidallyLocked": "Always shows the same face to its star.",
+      "albedo": "Fraction of light reflected.",
+      "greenhouse": "Efficiency of greenhouse gases (Earth = 1).",
+      "moonMass": "In lunar masses.",
+      "moonRadius": "In lunar radii.",
+      "moonDistance": "In planet radii (Earth–Moon ≈ 60)."
+    },
+    "stars": {
+      "M": "Red dwarf",
+      "K": "Orange dwarf",
+      "G": "Sun-like",
+      "F": "Yellow-white"
+    },
+    "derived": {
+      "gravity": "Gravity",
+      "density": "Density",
+      "escapeVelocity": "Escape velocity",
+      "surfaceTemp": "Surface temp.",
+      "equilibriumTemp": "Equilibrium temp.",
+      "flux": "Irradiance",
+      "yearDays": "Year",
+      "moonPeriodDays": "Moon orbit",
+      "magneticField": "Magnetic field",
+      "hz": "Habitable zone",
+      "days": "days",
+      "inside": "inside",
+      "tooHot": "too close",
+      "tooCold": "too far"
+    },
+    "life": {
+      "title": "Probability of life",
+      "details": "Show factors",
+      "hide": "Hide factors",
+      "disclaimer": "Simplified educational model, not a scientific prediction.",
+      "levels": { "none": "Hostile", "low": "Unlikely", "mid": "Possible", "high": "Promising", "veryHigh": "Highly habitable" }
+    },
+    "factors": {
+      "temperature": { "name": "Temperature", "info": "Life's chemistry works best between ~0 °C and ~50 °C." },
+      "water": { "name": "Liquid water", "info": "Needs water, plus temperature and pressure that keep it liquid." },
+      "atmosphere": { "name": "Atmosphere", "info": "Suitable pressure and enough gravity to keep the gas from escaping." },
+      "size": { "name": "Size", "info": "Very small planets lose their air; very large ones tend to be gaseous." },
+      "habitableZone": { "name": "Habitable zone", "info": "Region around the star where liquid water can exist." },
+      "magnetic": { "name": "Magnetosphere", "info": "Shields from radiation and stellar wind. Needs an iron core and rotation." },
+      "rotation": { "name": "Rotation", "info": "Very long days or tidal locking cause extreme temperature contrasts." },
+      "stability": { "name": "Axis stability", "info": "A massive moon stabilises the tilt, and with it the climate." },
+      "star": { "name": "Star type", "info": "Red dwarfs flare violently; F stars are short-lived." }
+    },
+    "presetNames": {
+      "earth": "Earth",
+      "mars": "Mars",
+      "venus": "Venus",
+      "superEarth": "Super-Earth",
+      "ocean": "Ocean world",
+      "ice": "Ice world",
+      "redDwarf": "Red dwarf"
+    },
+    "units": { "au": "AU" },
+    "controls": "Drag to rotate · scroll to zoom"
+  }
+}

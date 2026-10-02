@@ -1,0 +1,97 @@
+{
+  "nav": { "home": "Inicio", "planetLab": "Laboratorio planetario" },
+  "home": {
+    "kicker": "Astrofísica interactiva",
+    "title": "Explora el universo construyéndolo",
+    "subtitle": "Herramientas visuales para entender cómo funcionan planetas, estrellas y galaxias.",
+    "cards": {
+      "planetLab": { "title": "Laboratorio planetario", "desc": "Diseña un planeta y su luna en 3D, ajusta su física y descubre si podría albergar vida.", "cta": "Abrir laboratorio" },
+      "soon": "Próximamente",
+      "stars": { "title": "Ciclo de vida estelar", "desc": "De nebulosa a enana blanca, estrella de neutrones o agujero negro." },
+      "orbits": { "title": "Mecánica orbital", "desc": "Leyes de Kepler, transferencias de Hohmann y puntos de Lagrange." }
+    }
+  },
+  "lab": {
+    "presets": "Plantillas",
+    "random": "Aleatorio",
+    "reset": "Restablecer",
+    "openPanel": "Parámetros",
+    "closePanel": "Cerrar",
+    "sections": { "star": "Estrella", "planet": "Planeta", "surface": "Atmósfera y superficie", "moon": "Satélite", "data": "Datos calculados" },
+    "params": {
+      "mass": "Masa",
+      "radius": "Radio",
+      "distance": "Distancia a la estrella",
+      "rotationHours": "Periodo de rotación",
+      "tidallyLocked": "Acoplamiento de marea",
+      "tilt": "Inclinación axial",
+      "pressure": "Presión atmosférica",
+      "water": "Agua superficial",
+      "albedo": "Albedo",
+      "greenhouse": "Efecto invernadero",
+      "hasMoon": "Tiene satélite",
+      "moonMass": "Masa del satélite",
+      "moonRadius": "Radio del satélite",
+      "moonDistance": "Distancia orbital"
+    },
+    "hints": {
+      "tidallyLocked": "Siempre muestra la misma cara a su estrella.",
+      "albedo": "Fracción de luz reflejada.",
+      "greenhouse": "Eficiencia de los gases de efecto invernadero (Tierra = 1).",
+      "moonMass": "En masas lunares.",
+      "moonRadius": "En radios lunares.",
+      "moonDistance": "En radios del planeta (Tierra–Luna ≈ 60)."
+    },
+    "stars": {
+      "M": "Enana roja",
+      "K": "Enana naranja",
+      "G": "Tipo Sol",
+      "F": "Blanco-amarilla"
+    },
+    "derived": {
+      "gravity": "Gravedad",
+      "density": "Densidad",
+      "escapeVelocity": "Vel. de escape",
+      "surfaceTemp": "Temp. superficial",
+      "equilibriumTemp": "Temp. de equilibrio",
+      "flux": "Irradiación",
+      "yearDays": "Año",
+      "moonPeriodDays": "Órbita del satélite",
+      "magneticField": "Campo magnético",
+      "hz": "Zona habitable",
+      "days": "días",
+      "inside": "dentro",
+      "tooHot": "demasiado cerca",
+      "tooCold": "demasiado lejos"
+    },
+    "life": {
+      "title": "Probabilidad de vida",
+      "details": "Ver factores",
+      "hide": "Ocultar factores",
+      "disclaimer": "Modelo educativo simplificado, no una predicción científica.",
+      "levels": { "none": "Hostil", "low": "Improbable", "mid": "Posible", "high": "Prometedor", "veryHigh": "Muy habitable" }
+    },
+    "factors": {
+      "temperature": { "name": "Temperatura", "info": "La química de la vida funciona mejor entre ~0 °C y ~50 °C." },
+      "water": { "name": "Agua líquida", "info": "Necesita agua y que la temperatura y presión permitan que sea líquida." },
+      "atmosphere": { "name": "Atmósfera", "info": "Presión adecuada y gravedad suficiente para no perder el gas al espacio." },
+      "size": { "name": "Tamaño", "info": "Planetas muy pequeños pierden su atmósfera; los muy grandes suelen ser gaseosos." },
+      "habitableZone": { "name": "Zona habitable", "info": "Región alrededor de la estrella donde puede existir agua líquida." },
+      "magnetic": { "name": "Magnetosfera", "info": "Protege de la radiación y del viento estelar. Requiere núcleo de hierro y rotación." },
+      "rotation": { "name": "Rotación", "info": "Días muy largos o acoplamiento de marea producen contrastes térmicos extremos." },
+      "stability": { "name": "Estabilidad del eje", "info": "Una luna masiva estabiliza la inclinación y con ella el clima." },
+      "star": { "name": "Tipo de estrella", "info": "Las enanas rojas emiten fulguraciones; las estrellas F viven poco." }
+    },
+    "presetNames": {
+      "earth": "Tierra",
+      "mars": "Marte",
+      "venus": "Venus",
+      "superEarth": "Supertierra",
+      "ocean": "Mundo océano",
+      "ice": "Mundo helado",
+      "redDwarf": "Enana roja"
+    },
+    "units": { "au": "UA" },
+    "controls": "Arrastra para girar · rueda para acercar"
+  }
+}
